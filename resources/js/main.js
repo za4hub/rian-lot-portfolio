@@ -41,6 +41,3 @@ const navMenu = document.getElementById('nav-menu'),
             navMenu.classList.remove('show_menu')
         })
       }
-
-
-
