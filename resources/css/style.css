@@ -103,22 +103,19 @@ img {
     display: grid;
     gap: 1.5rem;
 }
-.section_title-1,
-.section_title-2 {
+.section_title-1{
     position: relative;
     font-size: var(--h1-font-size);
     width: max-content;
     margin: .75rem auto 2rem;
 }
 
-.section_title-1 span,
-.section_title-2 span {
+.section_title-1 span {
     z-index: 5;
     position: relative;
 }
 
-.section_title-1::after,
-.section_title-2::after {
+.section_title-1::after {
     content: "";
     width: 40px;
     height: 28px;
@@ -128,10 +125,6 @@ img {
     right: -8px;
 }
 
-.section_title-2::after {
-    top: initial;
-    bottom: -4px;
-}
 
 .geometric_box {
     position: absolute;
@@ -289,6 +282,7 @@ img {
     margin: 0 auto 3rem;
     font-size: var(--h2-font-size);
 }
+
 .nav_toggle{
     font-size: var(--h2-font-size);
     cursor: pointer;
@@ -628,7 +622,7 @@ img {
     animation: slideLeft 2.5s ease forwards;
     -webkit-animation: slideLeft 2.5s ease forwards;
 }
-.about_section .section_title-1::after{
+.section_title-1::after{
     width: 4.1rem;
     height: 2.5rem;
     top: 0;
@@ -733,7 +727,7 @@ img {
     background-color: var(--black-color);
     padding: 1.1rem 1.5rem;
     color: var(--white-color);
-    font-size: var(--font-medium);
+    font-size: var(--normal-font-size);
     transition: background-color .4s;
     -webkit-transition: background-color .4s;
     -moz-transition: background-color .4s;
