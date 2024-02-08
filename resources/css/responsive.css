@@ -400,7 +400,7 @@
 
 @media (max-width: 240.9px) {
     section{
-        padding-block: .5rem .5rem;
+        padding-block: .5rem 1.5rem;
     }
     .section_title-1{
         font-size: var(--normal-font-size);
@@ -581,7 +581,7 @@
         font-size: var(--smaller-font-size);
         padding: .5rem .6rem;
     }
-    .button i{
+    .about_section .button i{
         display: none;
     }
     .button_ghost{
@@ -627,6 +627,64 @@
         -ms-transform: translate(.8rem, .8rem);
         -o-transform: translate(.8rem, .8rem);
 }
+
+
+/* =============== Project Area ================== */
+
+
+    .project_section .section_title-1{
+        margin-bottom: 1rem;
+    }
+    .project_container{
+        grid-template-columns: repeat(1, 160px);
+    }
+    .project_button{
+        padding: .1rem;
+        right: 1rem;
+        bottom: -.5rem;
+    }
+    .project_button i{
+        font-size: 1rem;
+    }
+    .project_card{
+        padding: 1.25rem 1.25rem 1.25rem;
+    }
+    .project_content{
+        margin-top: -.5rem;
+        margin-bottom: .5rem;
+    }
+    .project_subtitle{
+        font-size: var(--smaller-font-size);
+        font-weight: var(--font-medium);
+        margin-bottom: 0rem;
+    }
+    .project_title{
+        font-size: var(--small-font-size);
+        margin-bottom: .5rem;
+    }
+    .project_description{
+        font-size: var(--smaller-font-size);
+    }
+    .project_link{
+        font-size: var(--smaller-font-size);
+    }
+    .project_link i{
+        font-size: .8rem;
+    }
+
+
+/* =============== Project Area ================== */
+
+
+    .contact_data{
+        width: unset;
+        height: unset;
+        padding: unset;
+    }
+
+
+
+
 
     /* KeyFrames */
     @keyframes slideBottom {
