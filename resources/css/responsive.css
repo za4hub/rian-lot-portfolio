@@ -393,12 +393,9 @@
     }
 }
 
+/* Smallest devices landscape phones */
 
-
-/* Smallest devices phones */
-
-
-@media (max-width: 240.9px) {
+@media (max-width: 320.9px) {
     section{
         padding-block: .5rem 1.5rem;
     }
@@ -427,7 +424,7 @@
         font-size: var(--smaller-font-size);
     }
     .nav_menu{
-        top: -140%;
+        top: -190%;
     }
     .show_menu{
         padding-block: 0rem 0rem;
@@ -438,7 +435,7 @@
     }
     .nav_name{
         font-size: 1.5rem;
-        margin-block: 1.5rem 1.5rem;
+        margin: auto;
     }
     .nav_name::after,
     .nav_name::before{
@@ -450,8 +447,8 @@
         right: -2rem;
     }
     .navbar{
-        row-gap: 1.5rem;
-        margin-block: 1rem 2.5rem;
+        row-gap: .8rem;
+        margin-block: 1rem 1rem;
     }
     .navbar a{
         font-size: 1rem;
@@ -469,7 +466,7 @@
     .nav_close{
         font-size: 1rem;
         top: .4rem;
-        right: 0.9rem;
+        right: 1rem;
     }
 
 
@@ -675,14 +672,128 @@
 
 /* =============== Project Area ================== */
 
-
+.contact_container {
+    grid-template-columns: repeat(1, auto);
+    }
+    .contact_title{
+        font-size: var(--small-font-size);
+        margin-bottom: 1rem;
+    }
     .contact_data{
         width: unset;
         height: unset;
         padding: unset;
+        border: none;
+    }
+    .contact_data .section_title-1{
+        margin: 0;
+        padding: .5rem;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+    .contact_data .section_title-1::after{
+        right: 7px;
+        top: 5px;
+    }
+    .contact_description-1{
+        display: none;
+    }
+    .contact_description-2{
+        display: none;
+    }
+    .contact_data .geometric_box{
+        display: none;
+    }
+    .contact_mail{
+        margin-top: -2.6rem;
+        padding: 3.5rem 1rem 1.5rem;
+    }
+    .contact_form{
+        row-gap: .5rem;
+    }
+    .contact_group{
+        grid-template-columns: repeat(1, 150px);
+        row-gap: .5rem;
+        column-gap: 0;
+    }
+    .contact_box{
+        width: 210px;
+        height: 30px;
+        margin: auto;
+    }
+    .message_box{
+        height: 8rem;
+    }
+    .message_box textarea{
+        padding-top: .5rem;
+    }
+    .contact_input{
+        font-size: var(--small-font-size);
+        border: 1px solid var(--black-color-light);
+        padding: .5rem .5rem;
+    }
+    .contact_label{
+        font-size: var(--smaller-font-size);
+        left: -8px;
+    }
+    .contact_input:focus{
+        border: 2px solid var(--white-color);
+    }
+    .contact_button{
+        width: 70%;
+        margin: auto;
+    }
+    .contact_button i{
+        display: none;
+    }
+    .contact_social{
+        padding: .5rem 0 1rem;
+        row-gap: .5rem;
+    }
+    .contact_social_arrow{
+        width: 30px;
+    }
+    .contact_social_description-1{
+        display: none;
+    }
+    .contact_social_links{
+        column-gap: .5rem;
+    }
+    .contact_social_link{
+        font-size: 1rem;
+        padding: .2rem;
     }
 
 
+/* =============== Footer Area ================== */
+
+
+    .footer_container{
+        grid-template-columns: repeat(1, auto);
+        row-gap: 1rem;
+        padding-block: 2rem 1rem;
+    }
+    .footer_navbar{
+        column-gap: 1rem;
+    }
+    .footer_navbar a{
+        font-size: var(--smaller-font-size);
+    }
+    .footer_copy{
+        font-size: var(--smaller-font-size);
+    }
+    /* ScrollUp */
+    .scrollup{
+        padding: 2px;
+        right: 5px;
+        bottom: 10px;
+    }
+    .scrollup i{
+        font-size: 1rem;
+    }
 
 
 
@@ -695,7 +806,7 @@
             -moz-transform: translateY(-1.5rem);
             -ms-transform: translateY(-1.5rem);
             -o-transform: translateY(-1.5rem);
-}
+        }
     
         100% {
             opacity: 1;
@@ -705,8 +816,8 @@
             -ms-transform: translateY(0rem);
             -o-transform: translateY(0rem);
         }
+    }
 }
-
 /* medium devices tablets */
 @media (max-width: 992px) {
     
